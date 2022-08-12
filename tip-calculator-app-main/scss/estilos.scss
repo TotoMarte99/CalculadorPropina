@@ -1,0 +1,168 @@
+*{
+    padding: 0px;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-size: 24px;
+    background-color: rgb(195 227 231);
+    font-family: 'Rajdhani', sans-serif;
+}
+.preBody{
+    background: rgb(247, 243, 243);
+    height: 100%;
+    border-radius: 30px;
+    padding-bottom: 20px;
+}
+
+.header{
+    text-align: center;
+    color: gray;
+    font-size: 1em;
+    margin: 30px 0;
+    letter-spacing: 8px;
+    
+}
+.porcentajes{
+    border: none;
+}
+.div1{
+    text-align: center;
+    padding: 8px;
+    
+}
+legend.btns__legend {
+    font-weight: 600;
+}
+label {
+    font-weight: 600;
+}
+.estilos_input{
+    display:flex;
+    font-size: 0.75em;
+    margin-bottom: 8px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    border-radius: 9px;
+    border: none;
+    width: 90%;
+    background-color :#c3e3e7;
+    text-align: center;
+    font-weight: 600;
+}
+.InputCustom{
+    background-color: #c3e3e7;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+}
+.porcentajes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+    padding: 10px;
+    .btn{
+        padding: 10px;
+        background-color: rgb(3, 110, 113);
+        border: none;
+        border-radius: 8px;
+        font-size: 1.2em;
+        cursor: pointer;
+        font-weight: 600;
+        color: white;
+    }
+    .estilos_input{
+        background: rgb(162, 174, 173);
+    }
+    .btn__button--selected{
+        background-color: rgb(49 193 197);
+        color: black;
+    }
+    // .btn:active{
+    //     background-color: rgb(49 193 197);
+    //     color: black;
+    // }
+}
+.NumeroDePersonas{
+    padding: 20px;
+    border: none;
+    fieldset{
+        border: none;
+    }
+}
+.btns__legend{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+section.Totales{
+    background-color: rgb(3 110 113);
+    border-radius: 12px;
+    padding: 42px 24px 24px;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.resultado{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .resultado__total{
+        font-size: 0.75em;
+        color: #c3e3e7;
+    }
+    .resultado__persons{
+        color: aliceblue;
+    }
+    .resultado__valor{
+        font-size: 1.2em;
+        color: #c3e3e7;
+        text-align: right;
+    }
+}
+.btn_reiniciar{
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 88px;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 640px){
+    .porcentajes .btn{
+        padding: 30px;
+        font-size: 1.8em;
+    }
+    .InputCustom{
+        font-size: 20px;
+    }
+    label{
+        font-size: 1.6em;
+    }
+    legend.btns__legend{
+        font-size: 1.6em;
+    }
+    .btn_reiniciar{
+        padding: 20px;
+        font-size: 1em;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .preBody{
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    section.Totales{
+        margin-right: 80px;
+        margin-left: 80px;
+    }
+    .porcentajes{
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&display=swap" rel="stylesheet">
+  <!--Estilos-->
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Calculador Propina app</title>
+<body>
+    <header class="header">
+      <h1>SPLI <br> TTER</h1>
+    </header>
+    <section class="preBody">
+  <section class="MontoAcalcular">
+    <div class="div1">
+      <label>Monto</label>
+      <input class="estilos_input" type="number" id="inputBill" value="100">
+    </div>
+      <fieldset class="porcentajes">
+        <legend class="btns__legend">Seleccione % Propina</legend>
+        <button id="btn" class="btn btn__button--selected">5%</button>
+        <button id="btn" class="btn">10%</button>
+        <button id="btn" class="btn">15%</button>
+        <button id="btn" class="btn">25%</button>
+        <button id="btn" class="btn">50%</button>
+        <input type="number" id="btn_custom" class="InputCustom" placeholder="Ingrese su %">
+      </fieldset>
+  </section>
+  <section class="NumeroDePersonas">
+    <fieldset>
+      <legend class="btns__legend">Numero de Personas</legend>
+      <input type="number" id="CantPersonas" class="estilos_input" value="5">
+    </fieldset>
+  </section>
+ 
+  <section class="Totales">
+   
+    <div class="seccion_resultados">
+      
+      <div class="resultado">
+
+        <div>
+          <p class="resultado__total">Total Propina</p>
+          <p class="resultado__persons">/ persona</p>
+        </div>
+
+        <p id="totalPropina" class="resultado__valor">0</p>
+
+        <div>
+          <p class="resultado__total">Total</p>
+          <p class="resultado__persons">/ persona</p>
+        </div>
+
+        <p id="totalPersonas" class="resultado__valor">0</p>
+
+      </div>
+
+      <button id="reset" class="btn_reiniciar">Reiniciar</button>
+
+    </div>
+
+
+  </section>
+</section>
+
+  
+  
+    <script src="../js/app.js"></script>
+</body>
+</html>
