@@ -133,11 +133,14 @@ section.Totales {
 
 .btn_reiniciar {
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   margin-top: 20px;
-  border-radius: 88px;
+  border-radius: 10px;
   border: none;
   cursor: pointer;
+  background: #77dce9;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 @media screen and (min-width: 640px) {
